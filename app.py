@@ -6,7 +6,7 @@ class ClipboardApp(tk.Frame):
         super().__init__(master)
         self.master = master
         self.master.title("Clipboard App")
-        self.master.geometry("300x150")
+        self.master.geometry("300x100")
         self.create_widgets()
 
     def create_widgets(self):
@@ -17,6 +17,9 @@ class ClipboardApp(tk.Frame):
         self.button1.pack(side="left", padx=10)
         
         self.button2 = tk.Button(self.button_frame, text=">", command=lambda: self.copy_to_clipboard(">"))
+        self.button2.pack(side="left", padx=10)
+
+        self.button2 = tk.Button(self.button_frame, text="<>", command=lambda: self.copy_to_clipboard("<>"))
         self.button2.pack(side="left", padx=10)
         
         self.button3 = tk.Button(self.button_frame, text="`", command=lambda: self.copy_to_clipboard("`"))
