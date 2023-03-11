@@ -7,3 +7,8 @@ sudo apt-get install python3-tk
 ```
 pip install pyperclip
 ```
+
+# Pyinstaller - Convert
+```
+pyinstaller --onefile app.py
+```
